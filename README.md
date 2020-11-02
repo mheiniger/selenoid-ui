@@ -1,5 +1,5 @@
 # Selenoid UI https
-[![Release](https://img.shields.io/github/release/mheiniger/selenoid-ui-https.svg)](https://github.com/mheiniger/selenoid-ui-https/releases/latest)
+[![Release](https://img.shields.io/github/release/mheiniger/selenoid-ui.svg)](https://github.com/mheiniger/selenoid-ui/releases/latest)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mheiniger/selenoid-ui-https.svg)](https://hub.docker.com/r/mheiniger/selenoid-ui-https)
 
 # Fork description
