@@ -1,14 +1,20 @@
-# Selenoid UI
-[![Build Status](https://travis-ci.org/aerokube/selenoid-ui.svg?branch=master)](https://travis-ci.org/aerokube/selenoid-ui)
-[![Coverage](https://codecov.io/github/aerokube/selenoid-ui/coverage.svg)](https://codecov.io/gh/aerokube/selenoid-ui)
-[![Release](https://img.shields.io/github/release/aerokube/selenoid-ui.svg)](https://github.com/aerokube/selenoid-ui/releases/latest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/aerokube/selenoid-ui.svg)](https://hub.docker.com/r/aerokube/selenoid-ui)
+# Selenoid UI https
+[![Release](https://img.shields.io/github/release/mheiniger/selenoid-ui-https.svg)](https://github.com/mheiniger/selenoid-ui-https/releases/latest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/mheiniger/selenoid-ui-https.svg)](https://hub.docker.com/r/mheiniger/selenoid-ui-https)
+
+# Fork description
+
+This is just a fork of https://hub.docker.com/r/aerokube/selenoid-ui and it adds the following:
+ - You can use https in `--selenoid-uri=https://selenoid.example.com`
+ - Its wrapped into an alpine container, so you now have a shell to debug things
+
+# Original description
 
 Simple status page with UI updates by SSE,
 backed by constant polling of status handle
 of [selenoid](https://github.com/aerokube/selenoid) on small go backend.
 
-![ui](docs/img/stats-sessions.png)
+![ui](https://raw.githubusercontent.com/aerokube/selenoid-ui/master/docs/img/stats-sessions.png)
 
 ## Usage
 
