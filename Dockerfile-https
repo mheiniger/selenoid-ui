@@ -1,0 +1,13 @@
+FROM aerokube/selenoid-ui as selenoid-ui
+
+FROM alpine
+
+RUN apk --no-cache add ca-certificates
+
+COPY --from=selenoid-ui selenoid-ui /
+COPY --from=selenoid-ui health-check /
+COPY LICENSE /
+
+HEALTHCHECK --interval=30s --timeout=2s --start-period=2s --retries=2 CMD [ "/health-check" ]
+EXPOSE 8080
+ENTRYPOINT ["/selenoid-ui"]
